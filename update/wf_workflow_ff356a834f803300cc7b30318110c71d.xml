@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"stages":{},"ends":["f335ae834f803300cc7b30318110c795"],"subflows":["b165dac2cb200200d71cb9c0c24c9c67"],"activities":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition table="change_request">type=standard^EQ<item endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="standard"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>4c45ae834f803300cc7b30318110c79d,ff35ae834f803300cc7b30318110c796,8c45ae834f803300cc7b30318110c79f,7335ae834f803300cc7b30318110c793,7335ae834f803300cc7b30318110c798,3335ae834f803300cc7b30318110c799,3335ae834f803300cc7b30318110c796,0c45ae834f803300cc7b30318110c79e,f335ae834f803300cc7b30318110c795</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>4c45ae834f803300cc7b30318110c79d,ff35ae834f803300cc7b30318110c796,8c45ae834f803300cc7b30318110c79f,7335ae834f803300cc7b30318110c793,7335ae834f803300cc7b30318110c798,3335ae834f803300cc7b30318110c799,3335ae834f803300cc7b30318110c796,0c45ae834f803300cc7b30318110c79e,f335ae834f803300cc7b30318110c795</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Test Standard change request</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">4c45ae834f803300cc7b30318110c79d</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:03</sys_created_on>
+        <sys_id>fb356a834f803300cc7b30318110c71e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:24</sys_updated_on>
+        <table>change_request</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="Test Standard change request">ff356a834f803300cc7b30318110c71d</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Test Standard change request</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ff356a834f803300cc7b30318110c71d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Test Standard change request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>wf_workflow_ff356a834f803300cc7b30318110c71d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <table>change_request</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Closed Incomplete</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1050</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>b735ae834f803300cc7b30318110c792</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>closed_incomplete</value>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Complete</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>7b35ae834f803300cc7b30318110c792</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>fb35ae834f803300cc7b30318110c792</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Approval Action">50a78fa50a6a803f66d064255f7201a5</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Approve</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>ff35ae834f803300cc7b30318110c796</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+        <x>285</x>
+        <y>172</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=ff35ae834f803300cc7b30318110c796"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ff35ae834f803300cc7b30318110c796</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>7735ae834f803300cc7b30318110c797</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>approved</value>
+        <variable display_value="">50ab35f70a6a803f76d36e1ebaf3639e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ff35ae834f803300cc7b30318110c796</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>7735ae834f803300cc7b30318110c797</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>approved</value>
+        <variable display_value="">50ab35f70a6a803f76d36e1ebaf3639e</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approve">ff35ae834f803300cc7b30318110c796</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>fb35ae834f803300cc7b30318110c797</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>4c45ae834f803300cc7b30318110c79d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+        <x>28</x>
+        <y>292</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=4c45ae834f803300cc7b30318110c79d"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">4c45ae834f803300cc7b30318110c79d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>8445ae834f803300cc7b30318110c79e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Branch">a246173ac0a8016400a47421cd41e42c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>20</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Branch</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>7335ae834f803300cc7b30318110c798</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+        <x>209</x>
+        <y>478</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=7335ae834f803300cc7b30318110c798"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Branch">7335ae834f803300cc7b30318110c798</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>bb35ae834f803300cc7b30318110c798</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Change moves to Implement</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>7335ae834f803300cc7b30318110c793</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+        <x>701</x>
+        <y>172</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=7335ae834f803300cc7b30318110c793"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7335ae834f803300cc7b30318110c793</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>3735ae834f803300cc7b30318110c794</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>state=-1^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7335ae834f803300cc7b30318110c793</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>bb35ae834f803300cc7b30318110c793</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7335ae834f803300cc7b30318110c793</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>3735ae834f803300cc7b30318110c794</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>state=-1^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7335ae834f803300cc7b30318110c793</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>bb35ae834f803300cc7b30318110c793</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Change moves to Implement">7335ae834f803300cc7b30318110c793</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>bb35ae834f803300cc7b30318110c794</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>13</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Change moves to Review</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>3335ae834f803300cc7b30318110c796</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+        <x>324</x>
+        <y>703</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=3335ae834f803300cc7b30318110c796"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3335ae834f803300cc7b30318110c796</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>7735ae834f803300cc7b30318110c796</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>state=0^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3335ae834f803300cc7b30318110c796</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>b335ae834f803300cc7b30318110c796</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3335ae834f803300cc7b30318110c796</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>7735ae834f803300cc7b30318110c796</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>state=0^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3335ae834f803300cc7b30318110c796</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>b335ae834f803300cc7b30318110c796</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Change moves to Review">3335ae834f803300cc7b30318110c796</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>7b35ae834f803300cc7b30318110c796</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>22</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Change moves to Scheduled</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>8c45ae834f803300cc7b30318110c79f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+        <x>494</x>
+        <y>170</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=8c45ae834f803300cc7b30318110c79f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8c45ae834f803300cc7b30318110c79f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>0045ae834f803300cc7b30318110c7a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8c45ae834f803300cc7b30318110c79f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>c045ae834f803300cc7b30318110c7a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>state=-2^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8c45ae834f803300cc7b30318110c79f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>c045ae834f803300cc7b30318110c7a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>state=-2^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8c45ae834f803300cc7b30318110c79f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>0045ae834f803300cc7b30318110c7a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Change moves to Scheduled">8c45ae834f803300cc7b30318110c79f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>c445ae834f803300cc7b30318110c7a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Workflow">f1afb4010a0a0b2c00d8f55e2372c728</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>23</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Change Request - Standard change tasks</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>3335ae834f803300cc7b30318110c799</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+        <x>511</x>
+        <y>467</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=3335ae834f803300cc7b30318110c799"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3335ae834f803300cc7b30318110c799</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>8445ae834f803300cc7b30318110c799</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>cc45ae834f803300cc7b30318110c799</value>
+        <variable display_value="">f25501290a0a0b2c005133d3fe2841b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3335ae834f803300cc7b30318110c799</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>8445ae834f803300cc7b30318110c799</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>cc45ae834f803300cc7b30318110c799</value>
+        <variable display_value="">f25501290a0a0b2c005133d3fe2841b3</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Change Request - Standard change tasks">3335ae834f803300cc7b30318110c799</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>0c45ae834f803300cc7b30318110c799</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>f335ae834f803300cc7b30318110c795</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+        <x>1107</x>
+        <y>746</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f335ae834f803300cc7b30318110c795"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>19</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Move to Review</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>0c45ae834f803300cc7b30318110c79e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+        <x>954</x>
+        <y>481</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=0c45ae834f803300cc7b30318110c79e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0c45ae834f803300cc7b30318110c79e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>8045ae834f803300cc7b30318110c79f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>state=0^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0c45ae834f803300cc7b30318110c79e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>8045ae834f803300cc7b30318110c79f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <value>state=0^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Move to Review">0c45ae834f803300cc7b30318110c79e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>0845ae834f803300cc7b30318110c79f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">7b35ae834f803300cc7b30318110c796</condition>
+        <from display_value="Change moves to Review">3335ae834f803300cc7b30318110c796</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>0045ae834f803300cc7b30318110c7a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <to display_value="End">f335ae834f803300cc7b30318110c795</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">bb35ae834f803300cc7b30318110c794</condition>
+        <from display_value="Change moves to Implement">7335ae834f803300cc7b30318110c793</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>0c45ae834f803300cc7b30318110c7a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <to display_value="Branch">7335ae834f803300cc7b30318110c798</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">bb35ae834f803300cc7b30318110c798</condition>
+        <from display_value="Branch">7335ae834f803300cc7b30318110c798</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>4045ae834f803300cc7b30318110c7a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <to display_value="Change Request - Standard change tasks">3335ae834f803300cc7b30318110c799</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">0c45ae834f803300cc7b30318110c799</condition>
+        <from display_value="Change Request - Standard change tasks">3335ae834f803300cc7b30318110c799</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>4845ae834f803300cc7b30318110c7a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <to display_value="Move to Review">0c45ae834f803300cc7b30318110c79e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">0845ae834f803300cc7b30318110c79f</condition>
+        <from display_value="Move to Review">0c45ae834f803300cc7b30318110c79e</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>4845ae834f803300cc7b30318110c7a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <to display_value="End">f335ae834f803300cc7b30318110c795</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">c445ae834f803300cc7b30318110c7a0</condition>
+        <from display_value="Change moves to Scheduled">8c45ae834f803300cc7b30318110c79f</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>4c45ae834f803300cc7b30318110c7a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <to display_value="Change moves to Implement">7335ae834f803300cc7b30318110c793</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">8445ae834f803300cc7b30318110c79e</condition>
+        <from display_value="Begin">4c45ae834f803300cc7b30318110c79d</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>8445ae834f803300cc7b30318110c7a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <to display_value="Approve">ff35ae834f803300cc7b30318110c796</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">fb35ae834f803300cc7b30318110c797</condition>
+        <from display_value="Approve">ff35ae834f803300cc7b30318110c796</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>c045ae834f803300cc7b30318110c7a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <to display_value="Change moves to Scheduled">8c45ae834f803300cc7b30318110c79f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">bb35ae834f803300cc7b30318110c798</condition>
+        <from display_value="Branch">7335ae834f803300cc7b30318110c798</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>cc45ae834f803300cc7b30318110c7a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <to display_value="Change moves to Review">3335ae834f803300cc7b30318110c796</to>
+    </wf_transition>
+    <wf_workflow_instance action="INSERT_OR_UPDATE">
+        <activity display_value="Change Request - Standard change tasks">3335ae834f803300cc7b30318110c799</activity>
+        <return_map/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:04</sys_created_on>
+        <sys_id>cc45ae834f803300cc7b30318110c799</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:04</sys_updated_on>
+        <workflow display_value="Change Request - Standard change tasks">b165dac2cb200200d71cb9c0c24c9c67</workflow>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+    </wf_workflow_instance>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:31:03</sys_created_on>
+        <sys_id>ff356a834f803300cc7b30318110c71e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:31:03</sys_updated_on>
+        <workflow_version display_value="Test Standard change request">fb356a834f803300cc7b30318110c71e</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=ff356a834f803300cc7b30318110c71d^sys_id!=fb356a834f803300cc7b30318110c71e">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
